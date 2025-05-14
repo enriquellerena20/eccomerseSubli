@@ -1,4 +1,6 @@
-/*  "use client";
+/*
+
+"use client";
 
 import { useState } from "react";
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
@@ -19,6 +21,4 @@ export default function CartButton() {
   );
   
 }
-
-
 */
