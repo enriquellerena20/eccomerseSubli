@@ -6,6 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import ProductCard from "@/components/ProductCard";
 import Footer from "@/components/Footer";
+import NewProductsCarousel from "@/components/carrusel";
 
 const navigation = [
   { name: "Tienda", href: "#" },
@@ -171,26 +172,26 @@ export default function HomePage() {
             {[
               {
                 id: 1,
-                name: "Ropa",
-                icon: "/imagenes/categorias/ropa.jpg",
+                name: "Bolsos",
+                icon: "/imagenes/categorias/bolsos.jpg",
                 description: "Explora nuestra colección de ropa",
               },
               {
                 id: 2,
-                name: "Electrónica",
-                icon: "/imagenes/categorias/electronica.jpg",
+                name: "Secadores",
+                icon: "/imagenes/categorias/Secadores.jpg",
                 description: "Descubre productos electrónicos",
               },
               {
                 id: 3,
-                name: "Hogar",
-                icon: "/imagenes/categorias/hogar.jpg",
+                name: "Peluches",
+                icon: "/imagenes/categorias/Peluches.jpg",
                 description: "Encuentra artículos para el hogar",
               },
               {
                 id: 4,
-                name: "Belleza",
-                icon: "/imagenes/categorias/belleza.jpg",
+                name: "Cajas",
+                icon: "/imagenes/categorias/Cajaseconomica.jpg",
                 description: "Explora productos de belleza",
               },
             ].map((category) => (
@@ -224,40 +225,35 @@ export default function HomePage() {
             {[
               {
                 id: 1,
-                name: "Tazas y termos",
-                image: "/imagenes/categorias/tazas.jpg",
-                description: "Tazas y termos personalizados",
+                name: "Agendas & Calendarios",
+                image: "/imagenes/categorias/agendas.jpg",
+                description: "Agendas & Calendarios",
               },
               {
                 id: 2,
-                name: "Llaveros",
+                name: "Accesorios Personalizados",
                 image: "/imagenes/categorias/llaveros.jpg",
                 description: "Llaveros decorativos",
               },
               {
                 id: 3,
-                name: "Agendas y cuadernos",
-                image: "/imagenes/categorias/agendas.jpg",
-                description: "Agendas y cuadernos de diseño",
+                name: "Bolsos & Estuches",
+                image: "/imagenes/categorias/bolsa.jpg",
+                description: "Bolsos & Estuches",
               },
               {
                 id: 4,
-                name: "Cajas y empaques",
+                name: "Regalos & Detalles",
                 image: "/imagenes/categorias/cajas.jpg",
                 description: "Cajas y empaques especiales",
               },
               {
                 id: 5,
-                name: "Polos para sublimar",
+                name: "Textiles Sublimables",
                 image: "/imagenes/categorias/polos.jpg",
                 description: "Polos para personalizar",
               },
-              {
-                id: 6,
-                name: "Accesorios y herramientas",
-                image: "/imagenes/categorias/accesorios.jpg",
-                description: "Accesorios y herramientas de trabajo",
-              },
+           
             ].map((category) => (
               <a
                 key={category.id}
@@ -336,7 +332,10 @@ export default function HomePage() {
             </div>
           </div>
         </section>
-
+              <>
+      <NewProductsCarousel />
+ 
+    </>
         <Footer />
       </div>
     </div>
