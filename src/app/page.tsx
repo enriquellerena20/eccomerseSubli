@@ -9,7 +9,7 @@ import Footer from "@/components/Footer";
 import NewProductsCarousel from "@/components/carrusel";
 
 const navigation = [
-  { name: "Tienda", href: "#" },
+  { name: "Tienda", href: "tienda" },
   { name: "Acerca de ", href: "#" },
   { name: "Novedades", href: "#" },
   { name: "Contacto", href: "#" },
@@ -334,7 +334,7 @@ export default function HomePage() {
         </section>
               <>
       <NewProductsCarousel />
- 
+
     </>
         <Footer />
       </div>
